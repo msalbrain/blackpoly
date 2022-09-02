@@ -12,7 +12,7 @@ var PlayerCache = make(map[int]*blackpoly.Player)
 
 
 
-const token = "5517968679:AAH4mhYlU_hlx-4XK1crVXlr2MlzysB_FsA"
+const token = ""
 
 func newBot(chatID int64) echotron.Bot {
 
