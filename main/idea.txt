@@ -1,0 +1,139 @@
+No_players = 2+
+No_houses = 32
+No_hotels = 12
+
+asset(
+    special board;
+    chance card;
+    community chest card;
+    Title Deed card:
+        property
+        play_money (still considering)
+        player tokens
+        2 six_sided dice
+)
+
+start:
+    each player choose a token and given $1500
+    the bank own all asset and can never go broke
+
+game_play:
+    All players start by rolling the dice and the highest get to start first
+
+    
+    main_part_of_turn:
+        roll the dice:
+            move no_of squares indicated;
+            if double is thrown, you take another turn after you turn is completed
+            each time you go pass `GO` you earn $200 from bank
+
+        buy_poperty:
+            you can buy any property from the bank that you land on 
+            or the bank could auction the property to the highest bidder
+
+        building:
+            you can only build a house if you have the all the color group
+            you can only build a house on one property at a time(even build rule)
+            a property can only have max of 4 houses, except (utilities, and parks)
+            an hotel can only be built if 4 houses are present on property
+            houses are removed when an hotel is built
+        
+        neccessary_actions:
+            pay rent, this is determined by title Deeds
+            pay income tax to the bank %200 or 10% of your asset
+            draw a community chest or chance card and follow instructions
+            re-shuffle cards afterwards
+
+    going_to_jail:
+        landing on `Go to jail` square
+        draw a card marked `Go to jail`
+        Roll a double trice
+
+    getting_out_of_jail:
+        pay the $50 fine
+        use a `use a get out of jail card`
+        roll a double
+        after 3rd failed attempt of rolling double you must pay $50 fine to leave jail
+
+        "while in jail you can buy and sell property and collect rent"
+
+    rules:
+        if you are broke you can sell your houses, hotel and property.
+        building may be sold for one-half of the purchase price
+        building may not be sold to other players
+        Unimproved properties (including railroad and utilities) can be sold to any player for any amount.
+
+        all property can be mortgaged, to lift this player must pay the bank the mortgage amount and 10% interest
+        player retain possession of mortgaged poperty 
+        mortgaged property can be sold for any amount, but new owner must pay mortgage +10%
+
+    winning:
+        the game can be ended at anytime and tally the total wort of each player
+
+        you could continue until a player bankrupt
+        
+
+
+
+
+
+
+
+
+<b>bold</b>, <strong>bold</strong>
+<i>italic</i>, <em>italic</em>
+<u>underline</u>, <ins>underline</ins>
+<s>strikethrough</s>, <strike>strikethrough</strike>, <del>strikethrough</del>
+<b>bold <i>italic bold <s>italic bold strikethrough</s> <u>underline italic bold</u></i> bold</b>
+<a href="http://www.example.com/">inline URL</a>
+<a href="tg://user?id=123456789">inline mention of a user</a>
+<code>inline fixed-width code</code>
+<pre>pre-formatted fixed-width code block</pre>
+<pre><code class="language-python">pre-formatted fixed-width code block written in the Python programming language</code></pre>
+
+
+        ****features of the bot****
+/help: this is where instructions will be
+if it state is clean 
+a replykeyboard button of /play and /help
+if /play:
+    a replykeyboard button of join and create
+    if join:
+        a replykeyboard button of join friends and join random
+    if join friends:
+        paste game session id from friends
+    if join random:
+        find a random game session and join or not
+    
+    if create:
+        check if player is already in any and provide them with continue or quit
+    else:
+        create new game session and return id
+
+
+    when new game is created send evbody a message of new player
+    and when hoster press start activate game session    
+
+    during game init()
+        set msgid for all players
+        when setting play inlinekeyboard it should have format
+        if player turn:
+            "
+            1. roll dice 🎲
+            2. make deal
+            3. buy 
+            4. auction
+            5. players 🫂
+            6. property
+            7. done
+            "
+        else not player turn:
+             "
+            1. players 🫂
+            2. property
+            "   
+
+
+    
+
+
