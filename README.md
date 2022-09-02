@@ -6,6 +6,7 @@ user-interface wasn't that suitable. But I learnt alot from this mini project ab
 pointers, array(slices) and so on. If you want to see how far I went, install the reqiured packages,
 input your api_token in telegram/bot.go
 then run
+
 `go run main/main.go`
 
 and if for some reason you like what you see and like to continue feel free to fork it. 
